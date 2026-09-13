@@ -17,9 +17,14 @@ SUBFOLDERS = ["templates", "checklists", "examples"]
 DEPARTMENTS_ROOT = os.path.join("handbook", "departments")
 AGENTS_ROOT = os.path.join("ai", "agents")
 DEPARTMENT_NAMES = [
-    "engineering", "product", "post-launch", "design", "research", "ai-engineering", "strategy",
-    "security", "devops", "finance", "legal", "hr", "operations", "marketing", "sales",
-    "customer-success", "data", "documentation", "hardware", "investor-relations",
+    "strategy",
+    "product",
+    "design",
+    "engineering",
+    "marketing",
+    "customer-success",
+    "finance",
+    "operations",
 ]
 FULL_DEPARTMENTS = [os.path.join(DEPARTMENTS_ROOT, name) for name in DEPARTMENT_NAMES]
 SECTION_RE = re.compile(r"^##\s*\d+\.", re.M)
